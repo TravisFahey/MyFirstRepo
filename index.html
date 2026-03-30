@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travis Fahey's Website</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <h1>Welcome to Travis Fahey's Website</h1>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm" aria-label="Primary">
+      <div class="container">
+        <a class="navbar-brand" href="/" aria-label="Gaming Events — Home">
+          <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+          <span class="brand-text">Gaming Info</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<div class="container mt-3">
+  <div class="mt-4 p-5 bg-secondary text-white rounded">
+    <h1>About:</h1>
+    <p>This is a simple site to talk about the games I am currently playing and the ones I like the most.</p>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <h2>Games Table</h2>
+  <p>This is a short table to represent my current games I am playing and what percentage I have completed:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Game</th>
+        <th>Platform</th>
+        <th>Percent complete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Runescape</td>
+        <td>PC</td>
+        <td>85%</td>
+      </tr>
+      <tr>
+        <td>Sekiro</td>
+        <td>PlayStation 4</td>
+        <td>60%</td>
+      </tr>
+      <tr>
+        <td>Baldur's Gate 3</td>
+        <td>PC</td>
+        <td>40%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+    <h2>Games List</h2>
+    <p>This is the games ranked in how much I am currently enjoying them.</p>            
+    <ul class="list-group">
+        <li class="list-group-item">Runescape<span class="badge bg-success float-right">First</span></li>
+        <li class="list-group-item">Baldur's Gate 3<span class="badge bg-warning float-right">Second</span></li>
+        <li class="list-group-item">Sekiro<span class="badge bg-danger float-right">Last</span></li>
+    </ul>
+</div>
+
+<footer class="mt-auto bg-purple text-white border-top-0" role="contentinfo">
+    <div class="container py-3 text-center">
+        <div class="small">
+            &copy; 2026 - Gaming Info. All rights reserved.
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
